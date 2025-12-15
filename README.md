@@ -4,7 +4,15 @@
 A modern, configurable **Fluent UI Card** built with **SPFx** that lets authors set a **title**, **description**, a **main action button**, and **four link buttons** (each with **name**, **icon**, and **URL**) directly from the **Property Pane**.  
 Clicking the main button opens a **right-side Panel** that lists all configured actions; selecting an item navigates to its configured link.
 
-!Hero / Demo
+
+## 🖼️ Screenshots
+
+### Card View
+![Card View](4-button-popup/src/webparts/rightSideButtonPane/assets/Card.png)
+
+### Right Popup Panel
+![Right Popup](4-button-popup/src/webparts/rightSideButtonPane/assets/Right Popup.png)
+
 
 ---
 
