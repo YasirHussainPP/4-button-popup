@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "4-button-popup-client-side-solution",
+    "id": "11182778-3ec1-4e72-867f-1c4f0a7fb2dd",
+    "version": "1.0.0.5",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "4-button-popup description"
+      },
+      "longDescription": {
+        "default": "4-button-popup description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "4-button-popup Feature",
+        "description": "The feature that activates elements of the 4-button-popup solution.",
+        "id": "4b0f8904-dea0-4eba-8ca8-2c7ef4439dd2",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/4-button-popup.sppkg"
+  }
+}

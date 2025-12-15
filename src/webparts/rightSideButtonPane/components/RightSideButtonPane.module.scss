@@ -1,0 +1,133 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  color: #1f1f1f;
+  text-decoration: none;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+}
+
+/* ✅ Left Pane (Text + Button) */
+.cardLeft {
+  flex: 1 1 60%;
+  padding: 16px 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.iconBox {
+  width: 40px;
+  height: 40px;
+  background: #0078d4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.titleText {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.descriptionText {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.mainButton {
+  margin-top: 10px;
+  width: fit-content;
+}
+
+/* ✅ Right Pane (Image) */
+.cardRight {
+  flex: 1 1 40%;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ✅ Fill without distortion */
+    display: block;
+  }
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cardLeft,
+  .cardRight {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .cardRight {
+    border-top: 1px solid #e0e0e0;
+    min-height: 140px;
+  }
+
+  .titleText {
+    font-size: 16px;
+  }
+
+  .descriptionText {
+    font-size: 13px;
+  }
+
+  .mainButton {
+    width: 100%;
+    text-align: center;
+  }
+}

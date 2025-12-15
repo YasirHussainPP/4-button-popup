@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "241f4476-7389-4011-9179-05349d8d2a3c",
+  "alias": "RightSideButtonPaneWebPart",
+  "componentType": "WebPart",
+
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "title": { "default": "RightSideButtonPane" },
+    "description": { "default": "RightSideButtonPane description" },
+    "officeFabricIconFontName": "GlobalNavButtonActive",
+    "properties": {
+      "description": "RightSideButtonPane"
+    }
+  }]
+}

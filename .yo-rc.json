@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "4-button-popup",
+    "libraryId": "11182778-3ec1-4e72-867f-1c4f0a7fb2dd",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "4-button-popup",
+    "solutionShortDescription": "4-button-popup description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
