@@ -1,73 +1,89 @@
-# 4-button-popup
 
-## Summary
+# 4-Button Popup (SPFx • Fluent UI Card)
 
-Short summary on functionality and used technologies.
+A modern, configurable **Fluent UI Card** built with **SPFx** that lets authors set a **title**, **description**, a **main action button**, and **four link buttons** (each with **name**, **icon**, and **URL**) directly from the **Property Pane**.  
+Clicking the main button opens a **right-side Panel** that lists all configured actions; selecting an item navigates to its configured link.
 
-[picture of the solution in action, if possible]
-
-## Used SharePoint Framework Version
-
-![version](https://img.shields.io/badge/version-1.21.1-green.svg)
-
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
-
-## Solution
-
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
-
-## Version history
-
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+!Hero / Demo
 
 ---
 
-## Minimal Path to Awesome
+## 📦 Project Metadata
 
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
+- **Name:** Project 4-button-popup  
+- **Version:** `0.0.1`  
+- **Build tools version:** `3.19.0`  
+- **SPFx:** `1.21.1`  
+- **React:** `17.0.1`  
+- **Fluent UI (React v8):** `^8.125.1`  
+- **TypeScript:** `~5.3.3`  
+- **Node (dev logs):** `v22.20.0` ⟶ **Note:** SPFx `1.21.x` works best on **Node 18 LTS**  
+- **Total build duration (log):** `~1.35 min`  
+- **Task warnings (log):** `5`
 
-> Include any additional steps as needed.
+Badges:
 
-## Features
+!SPFx 1.21.1
+![eact 17
+![Fluent%20UI%20v8](https://img.shields.io/badge/Fluent%20UI-v8.125.1-0078dres
 
-Description of the extension that expands upon high-level summary above.
+- 🃏 **Modern Fluent UI Card** UI (v8).
+- ⚙️ **Property Pane configuration**:
+  - Title & Description
+  - Main Button (label)
+  - **Four Link Buttons** — each with **Text**, **Icon (MDL2 name)**, and **URL**
+- 🧩 **Right-side Panel** pops on main button click, listing configured buttons.
+- 🔗 Clicking any item **navigates** to its configured link.
+- ♿ Accessible, responsive, and focused on SharePoint Online.
 
-This extension illustrates the following concepts:
+---
 
-- topic 1
-- topic 2
-- topic 3
+## 🧰 Tech Stack
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+- **SharePoint Framework (SPFx):** `1.21.1`
+- **React:** `17.0.1`
+- **Fluent UI (React v8):** `^8.125.1`
+- **Tooling:** Gulp 4, ESLint, TypeScript ~5.3
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+> Key dependencies:
+>
+> ```json
+> "dependencies": {
+>   "@fluentui/react": "^8.125.1",
+>   "@microsoft/sp-component-base": "1.21.1",
+>   "@microsoft/sp-core-library": "1.21.1",
+>   "@microsoft/sp-lodash-subset": "1.21.1",
+>   "@microsoft/sp-office-ui-fabric-core": "1.21.1",
+>   "@microsoft/sp-property-pane": "^1.21.1",
+>   "@microsoft/sp-webpart-base": "1.21.1",
+>   "react": "17.0.1",
+>   "react-dom": "17.0.1",
+>   "tslib": "2.3.1"
+> }
+> ```
 
-## References
+---
 
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+## ✅ Prerequisites
+
+- **Node.js:** Prefer **Node 18.x LTS** for SPFx `1.21.x` projects.
+- **Gulp CLI:** `npm i -g gulp`
+- **Yeoman & SPFx generator** (optional if scaffolding): `npm i -g yo @microsoft/generator-sharepoint`
+- **Office 365 tenant** with App Catalog (for deployment to SharePoint Online).
+
+> ⚠️ **Note about Node 22:** If your dev logs show Node `v22.20.0`, you may hit build or type issues on SPFx 1.21.x. If you see errors, switch to **Node 18 LTS** (via nvm or volta) for best compatibility.
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# 1) Install dependencies
+npm install
+
+# 2) (First time only) Trust dev certs for local workbench
+gulp trust-dev-cert
+
+# 3) Start the local server
+gulp serve
+``
