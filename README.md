@@ -11,7 +11,7 @@ Clicking the main button opens a **right-side Panel** that lists all configured 
 ![Card View](src/webparts/rightSideButtonPane/assets/Card.png)
 
 ### Right Popup Panel
-![Right Popup](src/webparts/rightSideButtonPane/assets/Right Popup.png)
+![Right Popup](src/webparts/rightSideButtonPane/assets/Right_Popup.png)
 
 
 ---
