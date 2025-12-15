@@ -8,7 +8,7 @@ Clicking the main button opens a **right-side Panel** that lists all configured 
 ## 🖼️ Screenshots
 
 ### Card View
-![Card View](4-button-popup/src/webparts/rightSideButtonPane/assets/Card.png)
+![Card View](src/webparts/rightSideButtonPane/assets/Card.png)
 
 ### Right Popup Panel
 ![Right Popup](4-button-popup/src/webparts/rightSideButtonPane/assets/Right Popup.png)
